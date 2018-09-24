@@ -6,10 +6,10 @@ body {
 }
 
 #sidenav {
-    width: 160px; /* Set the width of the sidebar */
+    width: 90px; /* Set the width of the sidebar */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 50px;
-    padding-left: 20px;
+    padding-left: 90px;
     position: fixed;
     left: 0;
 }
@@ -21,11 +21,28 @@ body {
 }
 
 #sidenav a:hover {
-	color: #73C4CC;
 	text-decoration: line-through;
 }
 
 #main {
 	margin-left: 180px;
-	padding-top: 50px;
+    margin-right: 180px;
+	padding-top: 42px;
+}
+
+table.wordsearch {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wordsearch td {
+	font-size: 18px;
+    color: #73C4CC;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px 8px 12px;
+}
+
+td.name {
+    color: #424C4C;
 }
