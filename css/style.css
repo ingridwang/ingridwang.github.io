@@ -3,6 +3,7 @@ body {
 	font-size: 14px;
 	padding: 0;
 	margin: 0;
+    background-color: #000;
 }
 
 #sidenav {
@@ -44,5 +45,5 @@ table.wordsearch {
 }
 
 td.name {
-    color: #424C4C;
+    color: #FFF;
 }
