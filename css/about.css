@@ -19,16 +19,6 @@
 	margin-top: -100px;
 }
 
-.about a {
-	color: #73C4CC;
-	text-decoration: none;
-}
-
-.about a:hover {
-	color: #B8D2D4;
-	text-decoration: none;
-}
-
 .clearfloat {
 	clear: both;
 }

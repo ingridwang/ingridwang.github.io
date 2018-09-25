@@ -6,6 +6,16 @@ body {
     background-color: #000;
 }
 
+a {
+    color: #73C4CC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B8D2D4;
+    text-decoration: none;
+}
+
 #sidenav {
     width: 120px;
     overflow-x: hidden; /* Disable horizontal scroll */
