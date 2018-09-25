@@ -1,10 +1,10 @@
 import React from "react";
 
 class Dance extends React.Component {
-	render() {
-		return (
-		);
-	}
+    render() {
+        return (
+        );
+    }
 }
 
 export default Dance;

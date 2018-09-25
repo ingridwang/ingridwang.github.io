@@ -1,10 +1,10 @@
 import React from "react";
 
 class Photography extends React.Component {
-	render() {
-		return (
-		);
-	}
+    render() {
+        return (
+        );
+    }
 }
 
 export default Photography;

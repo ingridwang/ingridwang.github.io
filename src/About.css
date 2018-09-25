@@ -1,24 +1,24 @@
 .about {
-	font-size: 12px;
-	width: 600px;
-	color: #FFF;
-	margin: auto;
+    font-size: 12px;
+    width: 600px;
+    color: #FFF;
+    margin: auto;
 }
 
 .profile-photo {
-	width: 300px;
-	height: 500px;
-	float: left;
-	overflow: hidden;
-	margin-right: 20px;
+    width: 300px;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
 }
 
 #photo-of-me {
-	width: 500px;
-	margin-left: -100px;
-	margin-top: -100px;
+    width: 500px;
+    margin-left: -100px;
+    margin-top: -100px;
 }
 
 .clearfloat {
-	clear: both;
+    clear: both;
 }

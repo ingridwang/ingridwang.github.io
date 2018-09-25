@@ -4,8 +4,8 @@ table.wordsearch {
 }
 
 .wordsearch td {
-	font-weight: lighter;
-	font-size: 18px;
+    font-weight: lighter;
+    font-size: 18px;
     color: #73C4CC;
     text-align: center;
     vertical-align: middle;

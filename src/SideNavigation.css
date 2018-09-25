@@ -27,12 +27,12 @@
 #pages button {
     font-family: "Open Sans";
     font-size: 14px;
-	color: #73C4CC;
-	display: block;
+    color: #73C4CC;
+    display: block;
     float: left;
     clear: both;
 }
 
 #pages button:hover {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
