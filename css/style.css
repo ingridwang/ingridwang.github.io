@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Open Sans";
-    src: url("fonts/OpenSans.ttf");
+    src: url("../fonts/OpenSans.ttf");
 }
 
 body {
@@ -47,6 +47,8 @@ a:hover {
 	color: #73C4CC;
 	text-decoration: none;
 	display: block;
+    float: left;
+    clear: both;
 }
 
 #pages a:hover {
