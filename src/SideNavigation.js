@@ -5,7 +5,7 @@ class SideNavigation extends React.Component {
 	render() {
 		return (
 			<div id="sidenav">
-				<a href="../../index.html">INGRID WANG</a>
+				<button>INGRID WANG</button>
 				<div id="pages">
 					<button>about</button>
 					<button>experience</button>

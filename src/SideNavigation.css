@@ -7,14 +7,16 @@
     left: 0;
 }
 
-#sidenav a {
+#sidenav button {
     font-family: "Open Sans";
     font-size: 14px;
     color: #FFF;
     text-decoration: none;
+    border: none;
+    background-color: transparent;
 }
 
-#sidenav a:hover {
+#sidenav button:hover {
     color: #B8D2D4;
 }
 
@@ -26,9 +28,6 @@
     font-family: "Open Sans";
     font-size: 14px;
 	color: #73C4CC;
-	text-decoration: none;
-    border: none;
-    background-color: transparent;
 	display: block;
     float: left;
     clear: both;
