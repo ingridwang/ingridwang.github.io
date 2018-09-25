@@ -6,7 +6,7 @@ class About extends React.Component {
         return (
             <div className="about">
                 <div className="profile-photo">
-                    <img id="photo-of-me" src="./img/me.jpg" alt="photo of Ingrid Wang">
+                    <img id="photo-of-me" src={require('./img/me.jpg')} alt="Ingrid Wang" />
                 </div>
                 <p>software developer based in new york city.</p>
                 <p>

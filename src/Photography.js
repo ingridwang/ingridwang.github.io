@@ -2,8 +2,7 @@ import React from "react";
 
 class Photography extends React.Component {
     render() {
-        return (
-        );
+        return null;
     }
 }
 

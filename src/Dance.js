@@ -2,8 +2,7 @@ import React from "react";
 
 class Dance extends React.Component {
     render() {
-        return (
-        );
+        return null;
     }
 }
 
