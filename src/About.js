@@ -5,8 +5,11 @@ class About extends React.Component {
     render() {
         return (
             <div className="about">
-                <div className="profile-photo">
-                    <img id="photo-of-me" src={require('./img/me.jpg')} alt="Ingrid Wang" />
+                <div className="profile-photo-wrapper">
+                    <div className="profile-photo">
+                        <img id="photo-of-me" src={require('./img/me.jpg')} alt="Ingrid Wang" />
+                    </div>
+                    <p>photo by Amrin Khurana</p>
                 </div>
                 <p>software developer based in new york city.</p>
                 <p>
