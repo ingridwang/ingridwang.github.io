@@ -1,8 +1,10 @@
 .about {
-    font-size: 12px;
     width: 600px;
-    color: #FFF;
     margin: auto;
+}
+
+.about p {
+    margin-top: 0px;
 }
 
 .profile-photo {

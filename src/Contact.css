@@ -1,0 +1,22 @@
+.contact {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact a {
+    margin: 0px 5px 0px 5px;
+}
+
+.contact-page-photo {
+    width: 600px;
+    height: 320px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#andy {
+    width: 600px;
+    /*margin-left: -100px;*/
+    margin-top: -58px;
+}

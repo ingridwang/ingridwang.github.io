@@ -5,9 +5,10 @@
 
 body {
     font-family: "Open Sans";
-    font-size: 14px;
+    font-size: 12px;
     padding: 0;
     margin: 0;
+    color: #FFF;
     background-color: #000;
 }
 
@@ -18,11 +19,10 @@ a {
 
 a:hover {
     color: #B8D2D4;
-    text-decoration: none;
 }
 
 #main {
     margin-left: 210px;
     margin-right: 210px;
-    padding-top: 42px;
+    padding-top: 50px;
 }
