@@ -37,3 +37,8 @@
     color: #B8D2D4;
     text-decoration: line-through;
 }
+
+#pages .page-link-active {
+    color: #B8D2D4;
+    text-decoration: line-through;
+}

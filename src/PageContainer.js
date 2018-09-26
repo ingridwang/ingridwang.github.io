@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link
+  NavLink,
+  Redirect
 } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import WordSearch from "./WordSearch";
@@ -18,28 +19,14 @@ import "./SideNavigation.css";
 
 const SideNavigation = () => (
     <div id="sidenav">
-        <Link to="/">
-            <div className="home-page-link">INGRID WANG</div>
-        </Link>
+        <NavLink to="/" className="home-page-link">INGRID WANG</NavLink>
         <div id="pages">
-            <Link to="/about">
-                <div className="page-link">about</div>
-            </Link>
-            <Link to="/experience">
-                <div className="page-link">experience</div>
-            </Link>
-            <Link to="/crafts">
-                <div className="page-link">crafts</div>
-            </Link>
-            <Link to="/photography">
-                <div className="page-link">photography</div>
-            </Link>
-            <Link to="/dance">
-                <div className="page-link">dance</div>
-            </Link>
-            <Link to="/contact">
-                <div className="page-link">contact</div>
-            </Link>
+            <NavLink to="/about" className="page-link" activeClassName="page-link-active">about</NavLink>
+            <NavLink to="/experience" className="page-link" activeClassName="page-link-active">experience</NavLink>
+            <NavLink to="/crafts" className="page-link" activeClassName="page-link-active">crafts</NavLink>
+            <NavLink to="/photography" className="page-link" activeClassName="page-link-active">photography</NavLink>
+            <NavLink to="/dance" className="page-link" activeClassName="page-link-active">dance</NavLink>
+            <NavLink to="/contact" className="page-link" activeClassName="page-link-active">contact</NavLink>
         </div>
     </div>
 );
