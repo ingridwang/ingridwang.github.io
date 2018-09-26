@@ -1,5 +1,9 @@
 import React from "react";
-import SideNavigation from "./SideNavigation";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 import WordSearch from "./WordSearch";
 import About from "./About";
 import Experience from "./Experience";
@@ -8,51 +12,55 @@ import Photography from "./Photography";
 import Dance from "./Dance";
 import Contact from "./Contact";
 import "./index.css";
+import "./SideNavigation.css";
 
-class PageContainer extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            activePage: 1,
-        };
-        this.getMainContent.bind(this);
-    }
+const SideNavigation = () => (
+    <div id="sidenav">
+        <Link to="/">
+            <div className="home-page-link">INGRID WANG</div>
+        </Link>
+        <div id="pages">
+            <Link to="/about">
+                <div className="page-link">about</div>
+            </Link>
+            <Link to="/experience">
+                <div className="page-link">experience</div>
+            </Link>
+            <Link to="/crafts">
+                <div className="page-link">crafts</div>
+            </Link>
+            <Link to="/photography">
+                <div className="page-link">photography</div>
+            </Link>
+            <Link to="/dance">
+                <div className="page-link">dance</div>
+            </Link>
+            <Link to="/contact">
+                <div className="page-link">contact</div>
+            </Link>
+        </div>
+    </div>
+);
 
-    switchPageHandler = (page) => {
-        this.setState({activePage: page});
-    }
+const Main = () => (
+    <div id="main">
+        <Route exact path="/" component={WordSearch}/>
+        <Route path="/about" component={About}/>
+        <Route path="/experience" component={Experience}/>
+        <Route path="/crafts" component={Crafts}/>
+        <Route path="/photography" component={Photography}/>
+        <Route path="/dance" component={Dance}/>
+        <Route path="/contact" component={Contact}/>
+    </div>
+);
 
-    getMainContent() {
-        switch (this.state.activePage) {
-            case 0:
-                return <WordSearch />;
-            case 1:
-                return <About />;
-            case 2:
-                return <Experience />;
-            case 3:
-                return <Crafts />;
-            case 4:
-                return <Photography />;
-            case 5:
-                return <Dance />;
-            case 6:
-                return <Contact />;
-            default:
-                return <WordSearch />;
-        }
-    }
-
-    render() {
-        return (
-            <div>
-                <SideNavigation switchPageHandler={this.switchPageHandler} />
-                <div id="main">
-                    {this.getMainContent()}
-                </div>
-            </div>
-        );
-    }
-}
+const PageContainer = () => (
+    <Router>
+        <div>
+            <SideNavigation />
+            <Main />
+        </div>
+    </Router>
+);
 
 export default PageContainer;
