@@ -1,6 +1,8 @@
 .photography {
     width: 500px;
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .photography p {

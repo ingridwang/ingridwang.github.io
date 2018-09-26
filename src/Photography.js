@@ -9,7 +9,7 @@ class Photography extends React.Component {
                     {"avid amateur film photographer"}
                 </p>
                 <p>
-                    {"loyal user of her mom’s old (don’t judge her) nikon fm10 and a beloved little Diana F"}
+                    {"loyal user of her mom’s old (don’t judge her) nikon fm10 and a beloved little diana f"}
                 </p>
             </div>
         );

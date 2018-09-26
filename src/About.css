@@ -1,6 +1,8 @@
 .about {
     width: 600px;
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .about p {
