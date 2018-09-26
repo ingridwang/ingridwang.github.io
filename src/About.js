@@ -13,7 +13,7 @@ class About extends React.Component {
                 </div>
                 <p>software developer based in new york city.</p>
                 <p>
-                    also a jack of many other random trades including photography, dance, dressmaking, stop motion animation, film, piano, and last and let’s face it, least, knitting.
+                    also an amateur jack of many other random trades including photography, dance, dressmaking, stop motion animation, film, piano, and last and let’s face it, least, knitting.
                 </p>
                 <p>
                     but, as the saying goes, master of none (yet).
