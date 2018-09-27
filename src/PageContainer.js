@@ -3,8 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  NavLink,
-  Redirect
+  NavLink
 } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import WordSearch from "./WordSearch";
@@ -45,12 +44,10 @@ class PageContainer extends React.Component {
 
     hoverEnter = (index) => {
         this.setState({hoverIndex: index});
-        console.log("enter: " + index);
     }
 
     hoverExit = () => {
         this.setState({hoverIndex: hoverIndexNull});
-        console.log("exit");
     }
 
     render() {

@@ -4,6 +4,65 @@
     transform: translateX(-50%)
 }
 
+.wordsearch .outline {
+    position: absolute;
+    border-color: #73C4CC;
+    border-radius: 36px;
+    border-width: 1.5px;
+    border-style: solid;
+    opacity: 0;
+}
+
+.wordsearch .outline:hover {
+    opacity: 1;
+}
+
+.wordsearch #about {
+    width: 210px;
+    height: 36px;
+    left: 214px;
+    top: 171px;
+}
+
+.wordsearch #experience {
+    width: 414px;
+    height: 36px;
+    left: 91px;
+    top: 87px;
+}
+
+.wordsearch #crafts {
+    border-radius: 32px;
+    transform: rotate(45deg);
+    width: 330px;
+    height: 32px;
+    left: 89px;
+    top: 194px;
+}
+
+.wordsearch #photography {
+    width: 458px;
+    height: 36px;
+    left: 4px;
+    top: 381px;
+}
+
+.wordsearch #dance {
+    border-radius: 32px;
+    transform: rotate(-45deg);
+    width: 280px;
+    height: 32px;
+    left: 51px;
+    top: 216px;
+}
+
+.wordsearch #contact {
+    width: 36px;
+    height: 292px;
+    left: 299px;
+    top: 127px;
+}
+
 .wordsearch td {
     font-weight: lighter;
     font-size: 18px;

@@ -1,18 +1,31 @@
 import React from "react";
+import {
+  NavLink
+} from 'react-router-dom'
 import "./index.css";
 import "./WordSearch.css";
 
 // {/**/} means don't change this letter
 
+const pageNames = ["about", "experience", "crafts", "photography", "dance", "contact"];
+
 class WordSearch extends React.Component {
     render() {
-        var hover = null;
-        if (this.props.hoverIndex != -1) {
-            hover = "hover for " + this.props.hoverIndex;
-        }
+        const hover = pageNames.map((pageName, id) => {
+            return (
+                <NavLink to={"/" + pageName}>
+                    <div 
+                        key={id} 
+                        id={pageName} 
+                        className="outline" 
+                        style={(this.props.hoverIndex === id ? {"opacity": 1} : null)}
+                    ></div>
+                </NavLink>
+            )
+        });
         return (
             <div className="wordsearch">
-                <p>{hover}</p>
+                {hover}
                 <table>
                     <tbody>
                         <tr>
@@ -47,14 +60,14 @@ class WordSearch extends React.Component {
                             <td>Z</td>
                             <td>D</td>
                             <td>E</td>{/**/}
-                            <td>X</td>{/**/}
-                            <td>P</td>{/**/}
-                            <td>E</td>{/**/}
-                            <td>R</td>{/**/}
-                            <td>I</td>{/**/}
-                            <td>E</td>{/**/}
-                            <td>N</td>{/**/}
                             <td>C</td>{/**/}
+                            <td>N</td>{/**/}
+                            <td>E</td>{/**/}
+                            <td>I</td>{/**/}
+                            <td>R</td>{/**/}
+                            <td>E</td>{/**/}
+                            <td>P</td>{/**/}
+                            <td>X</td>{/**/}
                             <td>E</td>{/**/}
                         </tr>
                         <tr>
@@ -75,7 +88,7 @@ class WordSearch extends React.Component {
                             <td>Q</td>
                             <td>H</td>
                             <td>X</td>
-                            <td>D</td>
+                            <td>L</td>
                             <td>M</td>
                             <td>A</td>{/**/}
                             <td>B</td>{/**/}
