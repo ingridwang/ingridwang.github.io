@@ -1,24 +1,33 @@
 import React from "react";
 import {
   NavLink
-} from 'react-router-dom'
+} from 'react-router-dom';
+import {
+    PageNames
+} from "./PageContainer.js"
 import "./index.css";
 import "./WordSearch.css";
 
 // {/**/} means don't change this letter
 
-const pageNames = ["about", "experience", "crafts", "photography", "dance", "contact"];
-
 class WordSearch extends React.Component {
+    mouseEnter = (index) => {
+        this.props.onHoverEnter(index);
+    }
+    mouseLeave = (index) => {
+        this.props.onHoverExit(index);
+    }
+
     render() {
-        const hover = pageNames.map((pageName, id) => {
+        const hover = PageNames.map((pageName, id) => {
             return (
-                <NavLink to={"/" + pageName}>
+                <NavLink to={"/" + pageName} key={id}>
                     <div 
-                        key={id} 
                         id={pageName} 
                         className="outline" 
                         style={(this.props.hoverIndex === id ? {"opacity": 1} : null)}
+                        onMouseEnter={() => this.mouseEnter(id)}
+                        onMouseLeave={() => this.mouseLeave(id)}
                     ></div>
                 </NavLink>
             )
