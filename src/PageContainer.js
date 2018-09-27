@@ -21,12 +21,12 @@ const SideNavigation = () => (
     <div id="sidenav">
         <NavLink to="/" className="home-page-link">INGRID WANG</NavLink>
         <div id="pages">
-            <NavLink to="/about" className="page-link" activeClassName="page-link-active">about</NavLink>
-            <NavLink to="/experience" className="page-link" activeClassName="page-link-active">experience</NavLink>
-            <NavLink to="/crafts" className="page-link" activeClassName="page-link-active">crafts</NavLink>
-            <NavLink to="/photography" className="page-link" activeClassName="page-link-active">photography</NavLink>
-            <NavLink to="/dance" className="page-link" activeClassName="page-link-active">dance</NavLink>
-            <NavLink to="/contact" className="page-link" activeClassName="page-link-active">contact</NavLink>
+            <NavLink to="/about" className="page-link">about</NavLink>
+            <NavLink to="/experience" className="page-link">experience</NavLink>
+            <NavLink to="/crafts" className="page-link">crafts</NavLink>
+            <NavLink to="/photography" className="page-link">photography</NavLink>
+            <NavLink to="/dance" className="page-link">dance</NavLink>
+            <NavLink to="/contact" className="page-link">contact</NavLink>
         </div>
     </div>
 );
