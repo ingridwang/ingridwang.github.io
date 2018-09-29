@@ -80,7 +80,11 @@ class PageContainer extends React.Component {
                         {/* main */}
                         <div id="main">
                             <TransitionGroup>
-                                <CSSTransition key={location.key} classNames="fade" timeout={500}>
+                                <CSSTransition
+                                    key={location.key}
+                                    classNames="fade"
+                                    timeout={{enter: 800, exit: 400}}
+                                >
                                     <Switch location={location}>
                                         <Route exact path="/" component={() => 
                                             <WordSearch 

@@ -22,10 +22,10 @@ class WordSearch extends React.Component {
         const hover = PageNames.map((pageName, id) => {
             return (
                 <NavLink to={"/" + pageName} key={id}>
-                    <div 
-                        id={pageName} 
-                        className="outline" 
+                    <div
+                        id={pageName}
                         style={(this.props.hoverIndex === id ? {"opacity": 1} : null)}
+                        className={"outline"}
                         onMouseEnter={() => this.mouseEnter(id)}
                         onMouseLeave={() => this.mouseLeave(id)}
                     ></div>

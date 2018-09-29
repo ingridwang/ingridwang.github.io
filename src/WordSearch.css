@@ -4,6 +4,23 @@
     transform: translateX(-50%)
 }
 
+/* wordsearch formatting */
+
+.wordsearch td {
+    font-weight: lighter;
+    font-size: 18px;
+    color: #73C4CC;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px 8px 12px;
+}
+
+td.name {
+    color: #FFF;
+}
+
+/* wordsearch circles */
+
 .wordsearch .outline {
     position: absolute;
     border-color: #73C4CC;
@@ -11,10 +28,7 @@
     border-width: 1.5px;
     border-style: solid;
     opacity: 0;
-}
-
-.wordsearch .outline:hover {
-    opacity: 1;
+    transition: opacity 200ms ease-in;
 }
 
 .wordsearch #about {
@@ -61,17 +75,4 @@
     height: 292px;
     left: 299px;
     top: 127px;
-}
-
-.wordsearch td {
-    font-weight: lighter;
-    font-size: 18px;
-    color: #73C4CC;
-    text-align: center;
-    vertical-align: middle;
-    padding: 8px 12px 8px 12px;
-}
-
-td.name {
-    color: #FFF;
 }
